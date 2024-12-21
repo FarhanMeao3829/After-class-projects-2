@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 train = pd.read_csv("company_sales_data.csv")
 print(train)
 
-profitList = train ['totalProfit'].tolist()
-monthList = train ['monthNumber'].tolist()
+profitList = train ['total_profit'].tolist()
+monthList = train ['month_number'].tolist()
 
 plt.plot(monthList, profitList, label= 'Month-wise profit data of the last year')
 
@@ -17,8 +17,8 @@ plt.title('Company profit per month')
 plt.yticks([100000, 300000, 400000, 600000, 800000])
 plt.show()
 
-profitList = train ['totalProfit'].tolist()
-monthList = train ['monthNumber'].tolist()
+profitList = train ['total_profit'].tolist()
+monthList = train ['month_number'].tolist()
 
 plt.plot(monthList, profitList, label= 'Profit data of last year',
          color='r', marker='o', markerfacecolor='k',
